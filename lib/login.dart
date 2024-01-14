@@ -21,9 +21,11 @@ class _LoginPageState extends State<LoginPage> {
             Column(
               children: <Widget>[
                 const SizedBox(height: 80.0),
-                Image.asset('assets/android_18.png'),
+                Image.asset('assets/diamond.png'),
                 const SizedBox(height: 5.0),
-                const Text('SHRINE'),
+                Text('SHRINE',
+                style: Theme.of(context).textTheme.headlineSmall,
+                ),
               ],
             ),
             const SizedBox(height: 120.0),
@@ -40,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
             TextField(
               controller: _passwordController,
               decoration: InputDecoration(
-                filled: false,
+                filled: true,
                 labelText: 'Password',
               ),
               obscureText: true,
